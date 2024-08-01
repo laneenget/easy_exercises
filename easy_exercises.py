@@ -116,4 +116,36 @@ def div_by_seven():
 # numbers. The results should be printed in a comma-separated
 # sequence on a single line.
 def factorial(n):
-    pass
+
+    if n == 0:
+        return 1
+    
+    return n * factorial(n-1)
+
+# With a given integral number n, write a program to
+# generate a dictionary that contains (i, i*i) such
+# that i is an integral number between 1 and n included.
+# The program should print the dictionary.
+def square(n):
+    return n*n
+
+def squareDict(n):
+
+    square_dict = {}
+    i = 0
+
+    while i <= n:
+        square_dict[i] = square(i)
+        i+=1
+
+    return square_dict
+
+def main():
+    print(factorial(8))
+    print(factorial(4))
+
+    print(squareDict(6))
+    print(squareDict(9))
+
+if __name__ == "__main__":
+    main()
