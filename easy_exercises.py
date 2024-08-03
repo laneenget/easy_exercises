@@ -140,12 +140,49 @@ def squareDict(n):
 
     return square_dict
 
+# Write a program which accepts a sequence of comma-separated
+# numbers from console and generate a list and a tuple which
+# contains every number.
+def list_and_tuple():
+
+    lst = input("Enter a sequence of comma-separated numbers: ").split(", ")
+    tpl = tuple(lst)
+    print(lst)
+    print(tpl)
+
+# Define a class which has at least two methods. getString: to
+# get a string from console input, printString: to print the string
+# in upper case.
+class GetAndPrint:
+
+    def __init__(self):
+        self.str = ""
+
+    def getString(self):
+        self.str = input("Input a string: ")
+    
+    def printString(self):
+        print(self.str)
+
+# Write a program that calculates and prints the value according to
+# the formula Q = sqrt((2*C*D)/H) where C = 50, H = 30, and D is 
+# an input value
+def calculate_q():
+
+    c = 50
+    h = 30
+    d = input("Enter a sequence of numbers seperated by a comma: ").split(", ")
+
+    
+
 def main():
     print(factorial(8))
     print(factorial(4))
 
     print(squareDict(6))
     print(squareDict(9))
+
+    list_and_tuple()
 
 if __name__ == "__main__":
     main()
