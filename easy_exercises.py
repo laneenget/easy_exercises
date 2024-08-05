@@ -1,4 +1,5 @@
 # Implementation of easy leet code exercises to use as warm-up
+import math
 
 # Slicing works like arr[start:stop:step]
 # Check if a string is a palindrome by reversing the string
@@ -172,8 +173,10 @@ def calculate_q():
     c = 50
     h = 30
     d = input("Enter a sequence of numbers seperated by a comma: ").split(", ")
+    q = []
 
-    
+    for num in d:
+        q.append((2*c*num)/h)
 
 def main():
     print(factorial(8))
