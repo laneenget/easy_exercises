@@ -176,7 +176,18 @@ def calculate_q():
     q = []
 
     for num in d:
-        q.append((2*c*num)/h)
+        num = 2*c*int(num)/h
+        num = round(math.sqrt(num))
+        q.append(num)
+
+    print(q)
+
+# Write a program which takes 2 digits, X, Y as input and generates a
+# 2-dimensional array. The element value in the i-th row and j-th column
+# of the array should be i*j.
+def two_d_array(x, y):
+
+    pass
 
 def main():
     print(factorial(8))
@@ -185,7 +196,9 @@ def main():
     print(squareDict(6))
     print(squareDict(9))
 
-    list_and_tuple()
+    # list_and_tuple()
+
+    # calculate_q()
 
 if __name__ == "__main__":
     main()
