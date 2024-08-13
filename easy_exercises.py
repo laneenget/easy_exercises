@@ -187,7 +187,10 @@ def calculate_q():
 # of the array should be i*j.
 def two_d_array(x, y):
 
-    pass
+    x = input("Enter an x value: ")
+    y = input("Enter a y value: ")
+
+    
 
 def main():
     print(factorial(8))
