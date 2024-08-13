@@ -198,7 +198,7 @@ def main():
 
     # list_and_tuple()
 
-    # calculate_q()
+    # calculate_q()  ??
 
 if __name__ == "__main__":
     main()
